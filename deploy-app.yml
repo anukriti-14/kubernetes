@@ -28,8 +28,6 @@ spec:
           ports:
             - containerPort: 8080
               name: application
-            - containerPort: 5000
-              name: jmx
           livenessProbe:
             httpGet:
               path: /actuator/health
